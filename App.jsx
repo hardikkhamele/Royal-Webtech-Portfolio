@@ -12,15 +12,14 @@ function App() {
   const [currentPage, setCurrentPage] = useState('home');
 
   const renderPage = () => {
-    switch (currentPage) {
-      case 'home':
-        return <Home setCurrentPage={setCurrentPage} />;
-      case 'about':
-        return <About setCurrentPage={setCurrentPage} />;
-      case 'contact':
-        return <Contact setCurrentPage={setCurrentPage} />;
-      default:
-        return <Home setCurrentPage={setCurrentPage} />;
+    if (currentPage === 'home') {
+      return <Home setCurrentPage={setCurrentPage} />;
+    } else if (currentPage.startsWith('about') || currentPage.startsWith('dept') || currentPage.startsWith('hospital') || currentPage.startsWith('insurance') || currentPage.startsWith('corporate') || currentPage.startsWith('rbsk') || currentPage.startsWith('abmss')) {
+      return <About setCurrentPage={setCurrentPage} />;
+    } else if (currentPage === 'contact' || currentPage === 'health-packages') {
+      return <Contact setCurrentPage={setCurrentPage} />;
+    } else {
+      return <Home setCurrentPage={setCurrentPage} />;
     }
   };
 
@@ -29,16 +28,16 @@ function App() {
       {/* Navigation Bar */}
       <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} />
 
-      {/* Breadcrumbs */}
+      {/* Breadcrumbs (Hidden on Home) */}
       <Breadcrumbs currentPage={currentPage} setCurrentPage={setCurrentPage} />
 
       {/* Dynamic Page Content */}
-      {renderPage()}
+      <div className="page-content-wrapper">
+        {renderPage()}
+      </div>
 
       {/* Pagination Component */}
-      <div className="container">
-        <Pagination currentPage={currentPage} setCurrentPage={setCurrentPage} />
-      </div>
+      <Pagination currentPage={currentPage} setCurrentPage={setCurrentPage} />
 
       {/* Footer */}
       <Footer setCurrentPage={setCurrentPage} />

@@ -1,0 +1,443 @@
+/* ============================================================
+   Nelson Multispeciality Hospital - Footer Styles
+   1:1 Pixel-Perfect Replica
+   ============================================================ */
+
+.nelson-footer-wrapper {
+  position: relative;
+  width: 100%;
+  font-family: 'Montserrat', 'Figtree', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #2D3748;
+}
+
+/* ---------------- Back to Top ---------------- */
+.nelson-back-to-top-bar {
+  background-color: #F8F9FA;
+  padding: 16px 0 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nelson-btt-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: #6C757D;
+  font-family: 'Figtree', 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.nelson-btt-icon {
+  width: 16px;
+  height: 16px;
+  stroke: #DC143C;
+  stroke-width: 2.8;
+  fill: none;
+  transition: transform 0.2s ease;
+}
+
+.nelson-btt-btn:hover {
+  color: #DC143C;
+}
+
+.nelson-btt-btn:hover .nelson-btt-icon {
+  transform: translateY(-3px);
+}
+
+/* ---------------- Main Footer Background ---------------- */
+.nelson-footer-main {
+  background: linear-gradient(180deg, #F8F9FA 0%, #FCF2EC 25%, #F8E4E5 70%, #E8B4B8 100%);
+  padding: 30px 40px 20px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.nelson-footer-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* ---------------- Top Row: Logo & Badges ---------------- */
+.nelson-footer-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.nelson-footer-logo-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nelson-footer-logo-img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.nelson-footer-badges {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* 24/7 Ambulance Badge */
+.nelson-badge-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 22px;
+  border-radius: 14px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.nelson-badge-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.nelson-badge-ambulance {
+  background-color: #d8edd9;
+  color: #27672b;
+}
+
+.nelson-badge-pharmacy {
+  background-color: #fad7dc;
+  color: #8c1e2e;
+}
+
+.nelson-badge-icon-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+.nelson-badge-ambulance .nelson-badge-icon-circle {
+  background-color: #4ba643;
+}
+
+.nelson-badge-pharmacy .nelson-badge-icon-circle {
+  background-color: #c91838;
+}
+
+.nelson-badge-svg {
+  width: 17px;
+  height: 17px;
+  fill: currentColor;
+}
+
+.nelson-badge-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+
+.nelson-badge-nabh-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.nelson-badge-nabh-img:hover {
+  transform: scale(1.06);
+}
+
+/* ---------------- Columns Grid ---------------- */
+.nelson-footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.2fr;
+  gap: 40px;
+  padding: 40px 0 30px 0;
+}
+
+.nelson-footer-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.nelson-footer-section-block {
+  margin-bottom: 26px;
+}
+
+.nelson-footer-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1B365D;
+  margin-bottom: 12px;
+  letter-spacing: -0.3px;
+}
+
+.nelson-footer-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nelson-footer-link {
+  color: #3A4753;
+  font-family: 'Figtree', 'Montserrat', sans-serif;
+  font-size: 14.5px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: inline-block;
+  cursor: pointer;
+  line-height: 1.45;
+}
+
+.nelson-footer-link:hover {
+  color: #DC143C;
+  transform: translateX(3px);
+}
+
+/* ---------------- Column 3: Hospitals & Locations ---------------- */
+.nelson-hospital-location-card {
+  margin-bottom: 22px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.nelson-location-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #556370;
+  font-size: 13.5px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.nelson-location-tag svg {
+  width: 14px;
+  height: 14px;
+  stroke: #DC143C;
+}
+
+.nelson-hospital-branch-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.nelson-hospital-branch-address {
+  font-family: 'Figtree', sans-serif;
+  font-size: 13.5px;
+  color: #4A5568;
+  line-height: 1.45;
+  margin-bottom: 8px;
+}
+
+.nelson-hospital-phone-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #1B365D;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14.5px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nelson-hospital-phone-link:hover {
+  color: #DC143C;
+}
+
+.nelson-hospital-phone-link svg {
+  width: 15px;
+  height: 15px;
+  fill: #1B365D;
+}
+
+/* Email Row */
+.nelson-footer-email-row {
+  margin-top: 14px;
+  margin-bottom: 22px;
+}
+
+.nelson-footer-email-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #1B365D;
+  font-size: 14.5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nelson-footer-email-link:hover {
+  color: #DC143C;
+}
+
+.nelson-footer-email-link svg {
+  width: 16px;
+  height: 16px;
+  fill: #DC143C;
+}
+
+/* Social Media Section */
+.nelson-social-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1B365D;
+  margin-bottom: 12px;
+}
+
+.nelson-social-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nelson-social-icon-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #1B365D;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(27, 54, 93, 0.25);
+}
+
+.nelson-social-icon-btn:hover {
+  background: #DC143C;
+  transform: translateY(-3px) scale(1.08);
+  box-shadow: 0 4px 12px rgba(220, 20, 60, 0.35);
+}
+
+.nelson-social-icon-btn svg {
+  width: 17px;
+  height: 17px;
+  fill: currentColor;
+}
+
+/* Floating Dr Nelsa Bird Mascot at bottom right */
+.nelson-footer-mascot-wrap {
+  position: absolute;
+  right: 15px;
+  bottom: 60px;
+  z-index: 10;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.nelson-footer-mascot-img {
+  width: 85px;
+  height: auto;
+  display: block;
+  animation: footerBirdWave 3s ease-in-out infinite;
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.25));
+}
+
+@keyframes footerBirdWave {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-6px) rotate(3deg); }
+}
+
+/* ---------------- Bottom Copyright Bar ---------------- */
+.nelson-footer-bottom-bar {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 16px 30px;
+  text-align: center;
+}
+
+.nelson-footer-bottom-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-family: 'Figtree', 'Montserrat', sans-serif;
+  font-size: 13px;
+  color: #556370;
+}
+
+.nelson-footer-bottom-inner p {
+  margin: 0;
+}
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 1024px) {
+  .nelson-footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  .nelson-footer-col:last-child {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .nelson-footer-main {
+    padding: 24px 18px 20px 18px;
+  }
+  .nelson-footer-top-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nelson-footer-badges {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .nelson-footer-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .nelson-footer-col:last-child {
+    grid-column: span 1;
+  }
+  .nelson-footer-bottom-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .nelson-footer-mascot-wrap {
+    bottom: 90px;
+    right: 10px;
+  }
+  .nelson-footer-mascot-img {
+    width: 65px;
+  }
+}
+
